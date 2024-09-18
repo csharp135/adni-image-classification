@@ -68,7 +68,7 @@ if __name__ == "__main__":
     runner = MultithreadedProcessRunner(num_workers)
     runner.start()
     print('Searchin for files to load in ', mri_dir)
-    files = glob.glob(mri_dir+'/**/*.nii', recursive=True)
+    files = glob.glob(mri_dir+'/**/*_Scaled_Br_*.nii', recursive=True)
     print('Found', len(files)' to process')
 
     for file in files:
